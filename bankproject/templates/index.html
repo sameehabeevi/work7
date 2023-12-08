@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>BankOnline</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body class="landing is-preload">
+    <div id="page-wrapper">
+
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="{% static 'index.html' %}">BANKING ONLINE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="accounts/register">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="accounts/login">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Branches
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Federal_Bank">Ernakulam</a>
+                            <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Kerala_Bank">Trivandrum</a>
+                            <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Kulamavu_Saddle_Dam_(Right_Bank)">Idukki</a>
+                            <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Banking_in_Kerala">Kottayam</a>
+                            <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Malappuram">Malappuram</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Rest of your HTML content -->
+		<!-- Main -->
+		<section id="main" class="container">
+
+			<section class="box special">
+				<header class="major">
+					<center><h2>INTRODUCING THE ULTIMATE MOBILE APP FOR SAFE BANKING FROM YOUR PHONE</h2></center>
+					<center><p>Online banking allows you to conduct financial transactions via the Internet. Online banking is also known as Internet banking or web banking.</p></center>
+				</header>
+				<span class="image featured"><img src="{% static 'img/banner2.png' %}" alt=""  height="" width="1150px;"/></span>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<center class="copyright">
+					&copy; www.bankingonline.com <br>Design: <a href="">BankIndia</a></center>
+			</footer>
+
+
+
+        <!-- Add Bootstrap JS and Popper.js for Bootstrap functionality -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <!-- Your existing script tags -->
+        <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.dropotron.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
+        <script src="{% static 'assets/js/browser.min.js' %}"></script>
+        <script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+        <script src="{% static 'assets/js/util.js' %}"></script>
+        <script src="{% static 'assets/js/main.js' %}"></script>
+    </body>
+    </html>

@@ -1,0 +1,90 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Registration</h2>
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="User Name"><br>
+    <input type="password" name="password" placeholder="Enter your password"><br>
+    <input type="password" name="password1" placeholder="confirm your password"><br>
+    <input type="submit">
+</form>
+{% for msg in messages %}
+{{msg}}
+{% endfor %}
+</body> -->
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        a {
+            color: #4caf50;
+            text-decoration: none;
+            margin-top: 10px;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="register-form">
+        <center><h2>Registration Form</h2></center>
+        <form method="post" action="{% url 'register' %}">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="User Name"><br>
+        <input type="password" name="password" placeholder="Enter your password"><br>
+        <input type="password" name="password1" placeholder="confirm your password"><br>
+        <button type="submit">Submit</button>
+        <a href="{% url 'login' %}">Login Here</a>
+        <!-- <button type="submit" onclick="redirectToLogin()">Submit</button>
+        <a href="#" id="loginLink">Back to Login</a> -->
+        </form>
+    </div>
+</body>
+</html>
